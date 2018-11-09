@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Field
+comment1.params=g
+comment1.target=void\ drawField(java.awt.Graphics)
+comment2.params=g
+comment2.target=void\ drawLines(java.awt.Graphics)
+numComments=3
