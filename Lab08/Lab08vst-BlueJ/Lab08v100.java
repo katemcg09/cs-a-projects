@@ -17,7 +17,7 @@ public class Lab08v100
             System.out.println();
             System.out.println("Entered String:     " + str);
             System.out.println("Palindrome:         " + Palindrome.isPal(str));
-     
+
             System.out.println("Almost Palindrome:  " + Palindrome.almostPal(str));// used only for the 100 point version
             System.out.print("Do you wish to repeat this program [Y/N]?  ===>>  ");
             String repeat = input.nextLine();
@@ -41,18 +41,39 @@ class Palindrome
         int len = s.length();
         boolean palindrome = true;
         String reverse = "";
-        
+        int space = s.indexOf(" ");
+        boolean isLetter = true;
+        String newS = "";
         for (int i = 0; i < len; i++){
-            reverse = reverse + s.substring(len-i-1,len-i);
-            
-      }
-        if(reverse.equals(s))
-            palindrome = true;
-        else
+            isLetter = Palindrome.isLetter(s.substring(i,i+1));
+            if(isLetter){
+                newS = newS + s.substring(i, i+1);
+            }
+        } 
+        if (newS.length() < len){
             palindrome = false;
+        }
+        else{
+                if (space != -1 || s.equals("")){
+                    palindrome = false;
+                }
+                else{
+
+                    for (int i = 0; i < len; i++){
+                        reverse = reverse + s.substring(len-i-1,len-i);
+
+                    }
+                    if(reverse.equals(s))
+                        palindrome = true;
+                    else
+                        palindrome = false;
+
+                }
+            }
         
+
         return palindrome;
-    }  
+    } 
 
     /*
      * Precondition:  letter is a String of one character.
@@ -61,10 +82,10 @@ class Palindrome
      */
     private static boolean isLetter(String letter)
     {
-      letter = letter.toUpperCase();
-      boolean isLetter = (letter.compareTo("A") > 0) && (letter.compareTo("Z") < 0);
+        letter = letter.toUpperCase();
         
-      return isLetter; 
+        boolean isLetter = (letter.compareTo("A") >= 0) && (letter.compareTo("Z") <= 0);
+        return isLetter; 
     }
 
     /*
@@ -83,6 +104,7 @@ class Palindrome
                 newS = newS + s.substring(i, i+1);
             }
         } 
+        System.out.println(newS);
         return newS; 
     }
 
@@ -94,21 +116,34 @@ class Palindrome
      */
     public static boolean almostPal(String s)
     {
-      boolean almostPal = true;
-      String newS = Palindrome.purge(s);
-      newS = newS.toUpperCase();
-      int len = newS.length();
-      if(Palindrome.isPal(s) == false){
-      for (int i = 0; i < len; i++){
-          if (newS.substring(i,i+1).equals(newS.substring(len-i-1, len-i)))
-                almostPal = true;
-                else
-                almostPal = false;
+        boolean almostPal = true;
+        String newS = Palindrome.purge(s);
+        newS = newS.toUpperCase();
+        String reverse = "";
+        int space = newS.indexOf(" ");
+        int len = newS.length();
+        if(Palindrome.isPal(s) == false){
+            if (space != -1 || newS.equals("")){
+                    almostPal = false;
+                }
+                else{
+
+                    for (int i = 0; i < len; i++){
+                        reverse = reverse + newS.substring(len-i-1,len-i);
+
+                    }
+                    System.out.println(reverse);
+                    if(reverse.equals(newS))
+                        almostPal = true;
+                    else
+                        almostPal = false;
+
+                }  
+
+            return almostPal;
         }
-      return almostPal; 
+        return false;
     }
-    return false;
-}
 
 }
 
