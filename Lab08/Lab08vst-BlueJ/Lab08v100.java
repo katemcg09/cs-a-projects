@@ -104,7 +104,6 @@ class Palindrome
                 newS = newS + s.substring(i, i+1);
             }
         } 
-        System.out.println(newS);
         return newS; 
     }
 
@@ -132,7 +131,6 @@ class Palindrome
                         reverse = reverse + newS.substring(len-i-1,len-i);
 
                     }
-                    System.out.println(reverse);
                     if(reverse.equals(newS))
                         almostPal = true;
                     else
