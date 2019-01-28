@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Avocado
+comment1.params=cat\ type
+comment1.target=Avocado(java.lang.String,\ java.lang.String)
+comment2.params=g
+comment2.target=void\ drawAvo(java.awt.Graphics)
+numComments=3

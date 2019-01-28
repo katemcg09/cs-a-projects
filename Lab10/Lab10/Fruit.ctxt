@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Fruit
+comment0.text=\n\ Fruit.java\ \ \n\n\ @author\ -\ Jane\ Doe\n\ @author\ -\ Period\ n\n\ @author\ -\ Id\ 0000000\n\n\ @author\ -\ I\ received\ help\ from\ ...\n\n
+comment1.params=cat\ t
+comment1.target=Fruit(java.lang.String,\ java.lang.String)
+numComments=2

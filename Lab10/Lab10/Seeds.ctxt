@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Seeds
+comment1.params=red\ green\ blue
+comment1.target=Seeds(int,\ int,\ int)
+comment2.params=g
+comment2.target=void\ drawSeeds(java.awt.Graphics)
+numComments=3
