@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Lab11av100
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=primes
+comment2.target=void\ computePrimes(boolean[])
+comment3.params=primes
+comment3.target=void\ displayPrimes(boolean[])
+comment4.params=pattern\ value
+comment4.target=void\ customFormat(java.lang.String,\ int)
+numComments=5
