@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Shape2Triangle
+comment1.params=x\ y\ xT\ yT
+comment1.target=Shape2Triangle(int,\ int,\ int,\ int)
+comment2.params=g
+comment2.target=void\ drawShape(java.awt.Graphics)
+comment3.params=g
+comment3.target=void\ displayName(java.awt.Graphics)
+comment4.params=g
+comment4.target=void\ displayNumSides(java.awt.Graphics)
+numComments=5
