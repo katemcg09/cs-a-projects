@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Caboose
+comment1.params=cC\ xPos\ yPos
+comment1.target=Caboose(java.awt.Color,\ int,\ int)
+comment2.params=x
+comment2.target=void\ setX(int)
+comment3.params=g
+comment3.target=void\ drawCar(java.awt.Graphics)
+comment4.params=g
+comment4.target=void\ drawWindows(java.awt.Graphics)
+comment5.params=g
+comment5.target=void\ drawCupola(java.awt.Graphics)
+numComments=6

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Locomotive
+comment1.params=cC\ xPos\ yPos
+comment1.target=Locomotive(java.awt.Color,\ int,\ int)
+comment2.params=g
+comment2.target=void\ drawCar(java.awt.Graphics)
+comment3.params=g
+comment3.target=void\ drawScoop(java.awt.Graphics)
+comment4.params=g
+comment4.target=void\ drawFunnel(java.awt.Graphics)
+numComments=5

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=FreightCar
+comment1.params=cC\ xPos\ yPos
+comment1.target=FreightCar(java.awt.Color,\ int,\ int)
+comment2.params=g
+comment2.target=void\ drawCar(java.awt.Graphics)
+comment3.params=x
+comment3.target=void\ setX(int)
+comment4.params=g
+comment4.target=void\ drawFreightDoors(java.awt.Graphics)
+numComments=5
